@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./assets/favicon-32x32.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Newsletter Form</title>
+</head>
+<body>
+    <main>
+        <section>
+            <img src="./assets/illustration-sign-up-mobile.svg" alt="Sign Up illustration">
+        </section>
+        <section class="main__info-form">
+            <div class="main__info-form__title">
+                <h2>Stay updated!</h2>
+                <p>Join 60,000+ product managers receiving monthly updates on:</p>
+            </div>
+            <ol class="main__info-form__info-list">
+                <li>
+                    <img src="./assets/icon-list.svg" alt="Icon List">
+                    <p>Product discovery and building what matters</p>
+                </li>
+                <li>
+                    <img src="./assets/icon-list.svg" alt="Icon List">
+                    <p>Measuring to ensure updates are a success</p>
+                </li>
+                <li>
+                    <img src="./assets/icon-list.svg" alt="Icon List">
+                    <p>And much more!</p>
+                </li>
+            </ol>
+            <form class="main__info-form__form">
+                <label for="email">Email Address</label>   
+                <input class="email" id="email" name="email" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="email@company.com" title="Please, Type a valid email (example: nombre@dominio.com)" required>
+                <button type="submit">Subscribe to monthly newsletter</button>
+            </form>
+        </section>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
