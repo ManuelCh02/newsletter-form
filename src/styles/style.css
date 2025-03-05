@@ -17,7 +17,7 @@
     --font-weight-700: 700;
 }
 
-:is(input, textarea):invalid {
+/* :is(input, textarea):invalid {
     background: hsl(4, 100%, 67%, 0.3);
     color: var(--red);
     border: 1px solid var(--red);
@@ -25,7 +25,7 @@
 
 :is(input, textarea):valid {
     border: 1px solid var(--grey);
-} 
+}  */
 
 main {
     width: auto;
@@ -86,6 +86,11 @@ main {
     justify-content: space-between;
     margin-top: 1.5rem;
 
+    & .main__info-form__label-container {
+        display: flex;
+        justify-content: space-between;
+    }
+
     & label {
         font-size: 0.8rem;
         font-weight: var(--font-weight-700);
@@ -97,7 +102,7 @@ main {
         padding: 1rem;
         border-radius: 8px;
         outline: none;
-        /* border: 1px solid var(--grey); */
+        border: 1px solid var(--grey); 
     }
 
     & button {
@@ -112,4 +117,18 @@ main {
     & button:hover {
         cursor: pointer;
     }
+}
+
+/* JS form styles */
+
+.emailInvalid {
+    border: 1px solid var(--red);
+    background: hsl(4, 100%, 67%, 0.3); 
+    color: var(--red);
+}
+
+.emailInvalidMessage {
+    font-size: 0.8rem;
+    font-weight: var(--font-weight-700);
+    color: var(--red);
 }

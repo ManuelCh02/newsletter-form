@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./styles/style.css">
     <link rel="shortcut icon" href="./assets/favicon-32x32.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -34,13 +34,17 @@
                     <p>And much more!</p>
                 </li>
             </ol>
-            <form class="main__info-form__form">
-                <label for="email">Email Address</label>   
-                <input class="email" id="email" name="email" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="email@company.com" title="Please, Type a valid email (example: nombre@dominio.com)" required>
+            <form class="main__info-form__form" target="_blank">
+                <div class="main__info-form__label-container">
+                    <label for="email">Email Address</label>  
+                </div>    
+                <input class="email" id="email" name="email" type="email"  placeholder="email@company.com" title="Please, Type a valid email (example: nombre@dominio.com)" required>
                 <button type="submit">Subscribe to monthly newsletter</button>
             </form>
         </section>
     </main>
-    <script src="index.js"></script>
+    <script src="index.js" type="module"></script>
 </body>
 </html>
+
+<!--pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"-->
